@@ -1,17 +1,27 @@
 <!DOCTYPE HTML>
-<!--
-  Spectral by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Red Hollow Games — About</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Red Hollow Games — upcoming indie developer working on Nightfall Protocol, a zombie survival open-world simulator." />
+    <meta name="description" content="Red Hollow Games — indie developer working on Nightfall Protocol." />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      /* Sticky header + button nav polish */
+      #header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(6px);
+      }
+      #nav .actions {
+        display: flex;
+        gap: 0.75rem;
+      }
+    </style>
   </head>
 
   <body class="is-preload">
@@ -21,15 +31,12 @@
       <header id="header">
         <h1><a href="index.html">Red Hollow Games</a></h1>
         <nav id="nav">
-          <ul>
-            <li class="special">
-              <a href="#menu" class="menuToggle"><span>Menu</span></a>
-              <div id="menu">
-                <ul>
-                  <li><a href="index.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
+          <ul class="actions">
+            <li>
+              <a href="index.html" class="button small primary">About</a>
+            </li>
+            <li>
+              <a href="contact.html" class="button small">Contact</a>
             </li>
           </ul>
         </nav>
@@ -47,37 +54,28 @@
 
             <h3>Who I am</h3>
             <p>
-              Hi — I’m the creator behind <strong>Red Hollow Games</strong>. I’m an upcoming indie developer focused on
-              building games that lean into atmosphere, tension, and player-driven stories. I’m currently working toward
-              my first major release: <strong>Nightfall Protocol</strong>.
+              I’m the developer behind <strong>Red Hollow Games</strong>, an upcoming indie studio focused on
+              immersive gameplay and atmospheric worlds. I’m currently developing my first major release,
+              <strong>Nightfall Protocol</strong>.
             </p>
 
             <h3>Nightfall Protocol</h3>
             <p>
-              <strong>Nightfall Protocol</strong> is a <strong>zombie survival open-world simulator</strong> built around
-              exploration, scavenging, and long-term survival strategy. The goal is to create a world that feels alive
-              (even when it’s falling apart): dynamic threats, meaningful decision-making, and systems that encourage you
-              to adapt—whether you’re securing supplies, planning routes, managing risk, or turning a fragile shelter into
-              something sustainable.
+              <strong>Nightfall Protocol</strong> is a <strong>zombie survival open-world simulator</strong>
+              centered around exploration, scavenging, and long-term survival. The game emphasizes player
+              choice, dynamic threats, and systems that reward preparation, adaptability, and risk management.
             </p>
 
             <p>
-              The experience is meant to reward careful preparation while still leaving room for unpredictable moments:
-              a quiet supply run that suddenly becomes a sprint, a safe area that stops being safe, or a small choice
-              that changes what happens next. Over time, I want <strong>Nightfall Protocol</strong> to grow into a sandbox
-              where players can build their own stories through the systems and the world itself.
+              The goal is to create a sandbox where unpredictable situations and meaningful decisions allow
+              players to create their own stories—whether that’s fortifying a safe zone, venturing into
+              dangerous territory, or barely surviving a night that didn’t go according to plan.
             </p>
 
             <hr />
 
-            <h3>Image</h3>
-            <p>
-              Add your PNG to your repo and update the path below if needed.
-              Recommended: put it in <code>img/</code> and name it <code>about.png</code>.
-            </p>
-
             <span class="image fit">
-              <img src="img/about.png" alt="Red Hollow Games - About Image" />
+              <img src="img/about.png" alt="Red Hollow Games" />
             </span>
 
           </div>
@@ -95,15 +93,13 @@
 
     <!-- Scripts -->
     <script>
-      // simple year auto-fill
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
